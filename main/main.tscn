@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgnh8516rpcan"]
+
+[ext_resource type="PackedScene" uid="uid://bjwrs6pocao2v" path="res://map/map.tscn" id="1_53q0u"]
+[ext_resource type="PackedScene" uid="uid://dexjgp5322t0o" path="res://highlight_component/highlight.tscn" id="2_pjrb6"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_53q0u")]
+
+[node name="Highlight" parent="." node_paths=PackedStringArray("map") instance=ExtResource("2_pjrb6")]
+map = NodePath("../Map")
+highlight_color = Color(1, 1, 1, 0.392157)

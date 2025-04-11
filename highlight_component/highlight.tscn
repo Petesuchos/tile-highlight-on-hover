@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dexjgp5322t0o"]
+
+[ext_resource type="Script" uid="uid://bb7ds2ok14per" path="res://highlight_component/highlight.gd" id="1_f2786"]
+
+[node name="Highlight" type="Node"]
+script = ExtResource("1_f2786")
